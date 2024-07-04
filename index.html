@@ -7,8 +7,9 @@
 	const appName = "c:ClientPortalCasesApp";
 	const componentName = "c:clientPortalCasesFlow";
 	const lightningEndpoint = "https://axicorp--dev2023a.sandbox.my.site.com";
+	const aToken = "Lom7m1ex3K7v52KlXNwpp8o4883ghgoVD9UkZ7bR";
 	const componentAttributes = {
-		authToken : "SivJf9CqiQjT4cW6Wlvx3Be3gLDQlJk0zIUKY0lU",
+		authToken : aToken,
 		clientCRN : "1166832", // Replace the value with a dynamic variable that should contain the Customer Number
             	clientPlatformLogin : "4381233"
 	}
@@ -21,6 +22,7 @@
 				componentAttributes,
 				"location-cpp",
 				function(cmp) {
+					console.log("authToken: " + aToken);
 					console.log("LWC component was created!!! Wow");
 				}
 			);
