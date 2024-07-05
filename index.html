@@ -7,13 +7,15 @@
 	const appName = "c:ClientPortalATAApp";
 	const componentName = "c:clientPortalATA";
 	const lightningEndpoint = "https://axicorp--dev2023a.sandbox.my.site.com";
-	const aToken = "V1O8YQLlX50zAGlOPMAlcqnUtwZCrnF1gsuFWYJe";
+	const aToken = "Ka3cLExYWb4Iqfy10n7yz8ui3BwEZ9tKyK24SsUX";
 	const userToken = "Bearer 00D250000009MOW!AQEAQAGsXGhNJoVB3llXrZBpz6P6hkcVlExZm61sW_ZZqta8a6WhoFZP0d3N3dkV9laA6JnzOQOP7LlldKSd7tk.8xTrz1J4";
 	const componentAttributes = {
 		authToken : aToken,
 		clientCRN : "1166832", // Replace the value with a dynamic variable that should contain the Customer Number
             	clientPlatformLogin : "4381233"
 	}
+	console.log("authToken1: " + aToken);
+	console.log("userToken1: " + userToken);
 
 	$Lightning.use(
 		appName, 
